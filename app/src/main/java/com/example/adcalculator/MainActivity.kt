@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnEqual.setOnClickListener {
             val input = binding.tVInput.text.toString()
-            val result = evaluateExpression(input)
+            val result = evaluateOperation(input)
             binding.tVOutput.text = result.toString()
         }
 
@@ -52,14 +52,11 @@ class MainActivity : AppCompatActivity() {
         binding.tVInput.text = newInput
     }
 
-    private fun evaluateExpression(input: String): Double {
+    private fun evaluateOperation(input: String): Double {
         var result = 0.0
-
-        // Split the input string into individual numbers and operators
         val numbers = input.split("[+\\-*/]".toRegex())
         val operators = input.split("\\d+(\\.\\d+)?".toRegex()).dropLastWhile { it.isEmpty() }
 
-        // Perform the arithmetic calculations based on the operators
         if (numbers.isNotEmpty()) {
             result = numbers[0].toDouble()
             for (i in 1 until numbers.size) {
