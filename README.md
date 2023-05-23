@@ -4,6 +4,11 @@ Description
 This Calculator app is a simple Android application that performs basic arithmetic operations. 
 It provides a user interface where users can input numbers and perform addition, subtraction, multiplication, and division operations. 
 The app displays the input expression and the calculated result in real-time.
+Demo video:
+
+https://github.com/OcnaChann/Pink-calculator/assets/133364573/2628bca8-88e9-4a3f-a0c3-a96f1578b888
+
+
 
 Features
    - User-friendly interface: The app has a clean and intuitive user interface, making it easy for users to input numbers and perform calculations.
